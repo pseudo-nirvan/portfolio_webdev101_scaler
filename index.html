@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Makes the layout match the width of phones and tablets. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nirvan Menon's personal portfolio, built with HTML and CSS for Builders Day."
+    />
+    <title>Nirvan Menon | Student Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="container navbar" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Go to the top of the page">
+          <span class="brand-mark">NM</span>
+          <span>Nirvan Menon</span>
+        </a>
+
+        <!-- Flexbox places these links in one row and keeps their spacing consistent. -->
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <!-- #stands for go to element with this id -->
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <a class="nav-cta" href="#contact">Let&apos;s talk</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot"></span> Learning, building, and exploring</p>
+            <p class="hero-greeting">Hello, I&apos;m</p>
+            <h1>Nirvan <span>Menon.</span></h1>
+            <p class="hero-role">A first-year student developer who enjoys building and learning new things.</p>
+            <p class="hero-intro">
+              I&apos;m learning how to turn ideas into clear, responsive web experiences
+              while strengthening my programming foundations one project at a time.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">See my early builds <span>↓</span></a>
+              <a class="button button-secondary" href="https://github.com/pseudo-nirvan" target="_blank" rel="noreferrer">My GitHub <span>↗</span></a>
+            </div>
+          </div>
+
+          <!-- A CSS-only terminal illustration: no image or JavaScript is needed. -->
+          <div class="terminal-wrap" aria-label="A decorative developer terminal">
+            <div class="terminal-card">
+              <div class="terminal-topbar">
+                <span></span><span></span><span></span>
+                <p>portfolio — terminal</p>
+              </div>
+              <div class="terminal-content">
+                <p><span class="terminal-prompt">$</span> whoami</p>
+                <p class="terminal-answer">Nirvan Menon</p>
+                <p><span class="terminal-prompt">$</span> focus</p>
+                <p class="terminal-answer">Java + web development</p>
+                <p><span class="terminal-prompt">$</span> currently_building</p>
+                <p class="terminal-answer">stronger foundations<span class="cursor">|</span></p>
+              </div>
+            </div>
+            <!-- Decorative elements are hidden from screen readers. -->
+            <span class="orbit orbit-one" aria-hidden="true"></span>
+            <span class="orbit orbit-two" aria-hidden="true"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Two identical groups make the CSS ticker loop seamlessly without JavaScript. -->
+      <div class="learning-ticker" role="region" aria-label="Currently learning Java, HTML, CSS, JavaScript, responsive design, and Tailwind CSS">
+        <div class="ticker-track">
+          <div class="ticker-group">
+            <span class="ticker-label"><span class="ticker-signal" aria-hidden="true"></span> Currently learning</span>
+            <span>Java</span><span class="ticker-separator" aria-hidden="true">✦</span>
+            <span>HTML</span><span class="ticker-separator" aria-hidden="true">✦</span>
+            <span>CSS</span><span class="ticker-separator" aria-hidden="true">✦</span>
+            <span>JavaScript</span><span class="ticker-separator" aria-hidden="true">✦</span>
+            <span>Responsive design</span><span class="ticker-separator" aria-hidden="true">✦</span>
+            <span>Tailwind CSS</span><span class="ticker-separator" aria-hidden="true">✦</span>
+          </div>
+          <!-- The duplicate is hidden from screen readers because it repeats the first group. -->
+          <div class="ticker-group" aria-hidden="true">
+            <span class="ticker-label"><span class="ticker-signal"></span> Currently learning</span>
+            <span>Java</span><span class="ticker-separator">✦</span>
+            <span>HTML</span><span class="ticker-separator">✦</span>
+            <span>CSS</span><span class="ticker-separator">✦</span>
+            <span>JavaScript</span><span class="ticker-separator">✦</span>
+            <span>Responsive design</span><span class="ticker-separator">✦</span>
+            <span>Tailwind CSS</span><span class="ticker-separator">✦</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="section" id="about">
+        <div class="container about-layout">
+          <div>
+            <p class="section-label">01 / About me</p>
+            <h2>Starting small.<br /><span>Learning steadily.</span></h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              Hi, I&apos;m Nirvan. I&apos;m a first-year student at Scaler School of Technology
+              in Bangalore, India, with an interest in building things and learning new ideas.
+            </p>
+            <p>
+              I&apos;m pursuing a B.S. in Computer Science from BITS Pilani alongside the AI and
+              Business programme at Scaler School of Technology. Right now, I&apos;m building my
+              Java, HTML, CSS, and JavaScript foundations while learning responsive design.
+            </p>
+            <a class="text-link" href="#contact">Let&apos;s connect <span>→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tint" id="skills">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">02 / Skills</p>
+              <h2>Tools I&apos;m using<br /><span>and learning.</span></h2>
+            </div>
+            <p>These are the foundations I&apos;m using to solve problems and make structured, responsive pages.</p>
+          </div>
+
+          <!-- CSS Grid creates an even, responsive set of skill cards. -->
+          <div class="skills-grid">
+            <article class="skill-card skill-card-featured">
+              <span class="skill-number">01</span>
+              <h3>Java</h3>
+              <p>Programming logic, conditions, loops, and small console-based programs.</p>
+              <span class="skill-icon">&lt;/&gt;</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-number">02</span>
+              <h3>HTML</h3>
+              <p>Semantic structure for clear, accessible page content.</p>
+              <span class="skill-icon">✦</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-number">03</span>
+              <h3>CSS</h3>
+              <p>Colour, type, spacing, hover effects, and visual design.</p>
+              <span class="skill-icon">↔</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-number">04</span>
+              <h3>JavaScript</h3>
+              <p>Programming fundamentals for making web pages respond to user actions.</p>
+              <span class="skill-icon">JS</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-number">05</span>
+              <h3>Flexbox &amp; Grid</h3>
+              <p>Simple layout tools for aligning content in rows, columns, and cards.</p>
+              <span class="skill-icon">▦</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-number">06</span>
+              <h3>Responsive design</h3>
+              <p>Currently learning how layouts adapt for mobile, tablet, and desktop.</p>
+              <span class="skill-icon">⌘</span>
+            </article>
+            <article class="skill-card skill-card-featured">
+              <span class="skill-number">07</span>
+              <h3>Tailwind CSS</h3>
+              <p>Currently learning utility classes for faster, consistent interface styling.</p>
+              <span class="skill-icon">~</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">03 / Selected work</p>
+              <h2>Early builds.<br /><span>Real learning.</span></h2>
+            </div>
+            <a class="text-link" href="https://github.com/pseudo-nirvan" target="_blank" rel="noreferrer">Visit my GitHub <span>↗</span></a>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-visual visual-one">
+                <span>01</span>
+                <div class="mini-game" aria-hidden="true"><i></i><i></i><i></i></div>
+              </div>
+              <div class="project-content">
+                <p class="project-type">Java fundamentals</p>
+                <h3>Console Calculator</h3>
+                <p>An early Java program that performs basic arithmetic and helped me practise program logic.</p>
+                <ul class="tag-list" aria-label="Technologies used">
+                  <li>Java</li><li>Logic</li><li>Console</li>
+                </ul>
+                <a class="card-link" href="mailto:nirvanmenon0000@gmail.com?subject=Question%20about%20your%20Console%20Calculator">Ask about it <span>↗</span></a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-visual visual-two">
+                <span>02</span>
+                <div class="mini-page" aria-hidden="true"><b></b><b></b><b></b></div>
+              </div>
+              <div class="project-content">
+                <p class="project-type">Java fundamentals</p>
+                <h3>Prime Range Finder</h3>
+                <p>A Java program that finds prime numbers within a chosen range, built to practise loops and conditions.</p>
+                <ul class="tag-list" aria-label="Technologies used">
+                  <li>Java</li><li>Loops</li><li>Conditions</li>
+                </ul>
+                <a class="card-link" href="mailto:nirvanmenon0000@gmail.com?subject=Question%20about%20your%20Prime%20Range%20Finder">Ask about it <span>↗</span></a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-visual visual-three">
+                <span>03</span>
+                <div class="mini-motion" aria-hidden="true"><i></i><i></i><i></i></div>
+              </div>
+              <div class="project-content">
+                <p class="project-type">In progress</p>
+                <h3>Web Development Journey</h3>
+                <p>I&apos;m currently learning to make responsive websites with HTML and CSS. More projects are on the way.</p>
+                <ul class="tag-list" aria-label="Technologies used">
+                  <li>HTML</li><li>CSS</li><li>Responsive design</li>
+                </ul>
+                <a class="card-link" href="#contact">Get in touch <span>→</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tint" id="journey">
+        <div class="container journey-layout">
+          <div>
+            <p class="section-label">04 / Education &amp; journey</p>
+            <h2>Learning one<br /><span>build at a time.</span></h2>
+          </div>
+          <ol class="timeline">
+            <li>
+              <p class="timeline-date">Degree</p>
+              <div>
+                <h3>B.S. in Computer Science — BITS Pilani</h3>
+                <p>My main degree, pursued while I build practical programming and web-development foundations.</p>
+              </div>
+            </li>
+            <li>
+              <p class="timeline-date">Alongside</p>
+              <div>
+                <h3>AI and Business — Scaler School of Technology</h3>
+                <p>A parallel programme in Bangalore, India, where I&apos;m learning by building small programs and exploring new concepts.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container contact-card">
+          <p class="section-label">05 / Contact</p>
+          <h2>Let&apos;s make something<br /><span>useful together.</span></h2>
+          <p>Have a question, an idea, or feedback on my work? I&apos;d be happy to hear from you.</p>
+          <a class="button button-primary" href="mailto:nirvanmenon0000@gmail.com?subject=Hello%20Nirvan">
+            Send an email <span>↗</span>
+          </a>
+          <div class="contact-links">
+            <!-- The icon is inside the same <a> as its label, so either click opens the same destination. -->
+            <!-- alt is empty because the visible label already names the link for screen-reader users. -->
+            <a href="https://github.com/pseudo-nirvan" target="_blank" rel="noreferrer">
+              <img class="contact-link-icon" src="https://upload.wikimedia.org/wikipedia/commons/4/4a/GitHub_Mark.png" alt="" width="16" height="16" />
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/nirvan-menon/" target="_blank" rel="noreferrer">
+              <img class="contact-link-icon" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Linkedin-logo-blue-In-square-40px.png" alt="" width="16" height="16" />
+              LinkedIn
+            </a>
+            <a href="mailto:nirvanmenon0000@gmail.com">
+              <img class="contact-link-icon" src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Envelope-letter-icon.png" alt="" width="16" height="16" />
+              Email
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <a class="brand" href="#home"><span class="brand-mark">NM</span><span>Nirvan Menon</span></a>
+        <p>Built with HTML &amp; CSS for Builders Day.</p>
+        <p>© <time datetime="2026">2026</time> Nirvan Menon</p>
+      </div>
+    </footer>
+  </body>
+</html>
