@@ -40,6 +40,9 @@ Nirvan Menon
 
 Open `index.html` in a browser. The navigation links go to sections on the same page, the social links open Nirvan's profiles, and the email buttons create a new email to Nirvan.
 
+working link to my project: 
+https://github.com/pseudo-nirvan/portfolio_webdev101_scaler
+
 ## Short explanations for a TA
 
 - **Flexbox:** Used for one-row groups such as the navbar, buttons, tags, and contact links.
